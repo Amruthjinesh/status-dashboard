@@ -4,7 +4,7 @@ A small monitoring dashboard built with Python, Flask and PostgreSQL, running in
 
 It checks my Jenkins server and a deploy agent every 30 seconds, saves each result in a database, and shows live UP/DOWN status on a web page.
 
-![Server Status Dashboard](dashboard.png)
+![Server Status Dashboard](dashboard.png.png)
 
 ## How it works
 
