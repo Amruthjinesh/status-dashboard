@@ -2,3 +2,4 @@
 *.bak
 app.py.v*
 __pycache__/
+.env
