@@ -1,6 +1,8 @@
 Server Status Dashboard
 A small monitoring dashboard built with Python, Flask and PostgreSQL, running in Docker containers on AWS EC2. It checks my Jenkins server and a deploy agent every 30 seconds, saves each result in a database, and shows live UP/DOWN status on a web page.
+
 ![Server Status Dashboard](dashboard.png.png)
+
 How it works
 1.  A background thread in the Python app checks each server's URL.
 2.  Every result (name, up or down, time) is saved in a PostgreSQL table called checks.
