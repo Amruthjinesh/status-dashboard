@@ -40,9 +40,12 @@ def save(name, status):
 def monitor():
     while True:
         for name, url in targets():
-            status = check(url)
-            save(name, status)
-            print(name + ":", status, flush=True)
+            try:
+                status = check(url)
+                save(name, status)
+                print(name + ":", status, flush=True)
+            except Exception as e:
+                print("monitor error:", e, flush=True)
         time.sleep(INTERVAL)
 
 PAGE = """<!doctype html>
